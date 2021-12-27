@@ -11,6 +11,7 @@ resource storageaccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   kind: 'StorageV2'
   properties:{
     minimumTlsVersion: 'TLS1_2'
+    allowBlobPublicAccess: false
   }
   sku: {
     name: 'Standard_LRS'
